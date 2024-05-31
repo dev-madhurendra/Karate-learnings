@@ -1,0 +1,29 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Buy groceries",
+            "isCompleted": false,
+            "description": "Purchase milk, bread, and eggs from the supermarket."
+        },
+        {
+            "id": 2,
+            "title": "Complete assignment",
+            "isCompleted": true,
+            "description": "Finish the math assignment for the upcoming class."
+        },
+        {
+            "id": 3,
+            "title": "Call plumber",
+            "isCompleted": false,
+            "description": "Schedule a visit with the plumber to fix the kitchen sink."
+        },
+        {
+            "id": 4,
+            "title": "Prepare presentation",
+            "isCompleted": true,
+            "description": "Create slides for the quarterly business review meeting."
+        }
+    ]
+
+}

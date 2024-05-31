@@ -2,13 +2,17 @@ Feature: Todo API Testing
   for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    # * url 'https://jsonplaceholder.typicode.com'
+    # * url 'http://localhost:8081'
+    * url baseUrl
+    * print 'Base URL is:', baseUrl 
     And header Content-Type = 'application/json'
 
   Scenario: get all tasks
     Given path 'todos'
     When method get
     Then status 200
+    * def postId = response[0].id
     And match response[0].id == 1
     And match response[0].userId == 1
     And match response[0].title == 'delectus aut autem'
